@@ -4,6 +4,12 @@ Add a short entry after each meaningful change: what changed, what you ran or
 checked, and the next step. Commit the log with the code so the checkpoint is
 easy to understand later.
 
+## 2026-11-06 — VS Code commit routine
+
+- Added a Source Control workflow to the README so future commits can be
+  reviewed, made, and synced without copying terminal commands.
+- Checked the steps against the current VS Code Source Control documentation.
+
 ## 2026-11-06 — First Git checkpoint
 
 - Current PC program reads the first 16 samples from `440hz.wav`, rounds each

@@ -70,18 +70,23 @@ After a meaningful change, record what changed and what you tested in
 is ignored because it can be recreated. `440hz.wav` is included because the
 program needs it to run; other WAV files remain ignored by default.
 
-From the project folder, save a checkpoint with:
+To save a checkpoint in VS Code, without typing Git commands:
 
-```powershell
-git status
-git add -A
-git commit -m "Describe what changed"
-git push
-```
+1. Save your files and run the build or other relevant check.
+2. Open **Source Control** with `Ctrl+Shift+G`. Click each changed file to review
+   its difference from the last commit.
+3. Add a short entry to `docs/progress.md`: what changed, what you checked, and
+   what to do next.
+4. Click the **+** beside the related files to stage them. Review **Staged
+   Changes**; leave unrelated work for another commit.
+5. Type a short message describing the change, such as `Document PCM
+   quantization`, and click **Commit**.
+6. Click **Sync Changes** to send the commit to GitHub. A commit saves a local
+   checkpoint; syncing also backs it up online. VS Code may pull remote changes
+   before it pushes yours.
 
-Review `git status` before adding files. A commit saves history on this PC;
-`git push` copies it off the PC once a remote repository is connected. Until
-then, the Git history is local only.
+The [VS Code Source Control guide](https://code.visualstudio.com/docs/sourcecontrol/overview)
+shows these controls. Keep each commit focused on one understandable change.
 
 ## Terminal commands
 
