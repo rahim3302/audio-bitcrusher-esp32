@@ -1,0 +1,7 @@
+/build/
+/work/
+*.wav
+!440hz.wav
+*.raw
+*.pcm
+.DS_Store
